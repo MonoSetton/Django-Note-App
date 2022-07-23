@@ -8,6 +8,12 @@ from notes.models import Note
 @login_required(login_url='/login')
 def home(request):
     notes = Note.objects.all()
+    if request.method == 'POST':
+        note_id = request.POST.get('note_id')
+        note = Note.objects.filter(id=note_id).first()
+        if note and note.author == request.user:
+            note.delete()
+
     return render(request, 'notes/home.html', {'notes': notes})
 
 def sign_up(request):
