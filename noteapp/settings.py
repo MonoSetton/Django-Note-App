@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'noteapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'noteappdb',
-        'USER': 'postgres',
-        'PASSWORD': 'KurusoXCV792',
-        'HOST': 'localhost',
+        'NAME': 'd6idqslnlq69aj',
+        'USER': 'cfitugrtivbkkq',
+        'PASSWORD': '56ae7a11dc0455f668781a84f9ae0b9222a0132bd7a2eac4ab4a10b9de81c6db',
+        'HOST': 'ec2-54-170-90-26.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
