@@ -12,5 +12,4 @@ urlpatterns = [
     path('home', views.home, name='home'),
     path('', include('accounts.urls')),
     path('', include('notes.urls')),
-
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
