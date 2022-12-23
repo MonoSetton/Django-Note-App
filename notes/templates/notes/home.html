@@ -2,25 +2,6 @@
 {% block title %} Notes {% endblock %}
 {% block content %}
 
-{% for note in notes  %}
-        <div class="card mt-2">
-            <div class="card-header">
-                <strong>{{ note.title }}</strong>
-            </div>
-            <div class="card-body d-flex flex-row justify-content-between">
-                <div>
-                    <p>{{ note.body }}</p>
-                </div>
-                <div>
-                    <a href="{% url 'update_note' note.id %}" class="btn btn-info">Update</a>
-                    <a href="{% url 'delete_note' note.id %}" class="btn btn-danger">Delete</a>
-                </div>
-            </div>
-            <div class="card-footer text-muted">{{ note.created_at }}</div>
-        </div>
-
-
-{% endfor %}
 
 
 {% endblock %}
