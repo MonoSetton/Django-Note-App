@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l^!ym9=ymrajmm0x48bs8+gc0ile7afx-n*p87$-2+u$8(of%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['note-app-bbq.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -86,13 +86,14 @@ WSGI_APPLICATION = 'noteapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6idqslnlq69aj',
-        'USER': 'cfitugrtivbkkq',
-        'PASSWORD': '56ae7a11dc0455f668781a84f9ae0b9222a0132bd7a2eac4ab4a10b9de81c6db',
-        'HOST': 'ec2-54-170-90-26.eu-west-1.compute.amazonaws.com',
+        'NAME': 'noteappdb',
+        'USER': 'postgres',
+        'PASSWORD': 'KurusoXCV792',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
