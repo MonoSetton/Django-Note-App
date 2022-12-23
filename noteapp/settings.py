@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l^!ym9=ymrajmm0x48bs8+gc0ile7afx-n*p87$-2+u$8(of%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['note-app-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['django-note-app-production.up.railway.app', '127.0.0.1']
 
 
 # Application definition
