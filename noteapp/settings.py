@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l^!ym9=ymrajmm0x48bs8+gc0ile7afx-n*p87$-2+u$8(of%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['note-app-production.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'noteapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'noteappdb',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'KurusoXCV792',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'PASSWORD': '0h7XeTXYItFZj02ul6uP',
+        'HOST': 'containers-us-west-78.railway.app',
+        'PORT': '7681',
     }
 }
 
