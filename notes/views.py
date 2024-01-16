@@ -27,7 +27,7 @@ def update_note(request, pk):
         if form.is_valid():
             note.save()
             return redirect('/home')
-    return render(request, 'notes/create_note.html', {'form': form})
+    return render(request, 'notes/update_note.html', {'form': form})
 
 
 def delete_note(request, pk):
