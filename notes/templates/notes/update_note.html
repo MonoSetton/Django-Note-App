@@ -3,10 +3,19 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<form method="POST">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <button type="submit" class="btn btn-success">Update note</button>
-</form>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">Update Note</div>
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-success">Update note</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
