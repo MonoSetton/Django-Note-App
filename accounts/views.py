@@ -3,6 +3,7 @@ from .forms import RegisterForm
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from notes.models import Note
+from .decorators import unauthenticated_user
 
 
 @login_required(login_url='/login')
@@ -17,6 +18,7 @@ def home(request):
     return render(request, 'notes/home.html', {'notes': notes})
 
 
+@unauthenticated_user
 def sign_up(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
