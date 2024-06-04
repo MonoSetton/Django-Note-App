@@ -1,4 +1,4 @@
-Hosted Here ----> https://django-noteapp.up.railway.app
+Hosted Here ----> https://dailyroutine.up.railway.app
 
 # **Note App**
 
