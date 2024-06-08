@@ -29,8 +29,8 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://django-note-app-production.up.railway.app',
-    'http://django-note-app-production.up.railway.app'
+    'https://django-noteapp.up.railway.app',
+    'http://django-noteapp.up.railway.app'
 ]
 
 
